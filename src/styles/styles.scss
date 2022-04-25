@@ -1,0 +1,11 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/typography.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/base.scss";
+
+// Components
+@import "components/screen.scss";
+@import "components/modal.scss";

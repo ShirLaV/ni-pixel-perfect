@@ -1,0 +1,71 @@
+.modal {
+  width: 850px;
+  height: 520px;
+  background-color: $clr2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: HurmeGeometricSans3 bold;
+
+  .close-btn {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    &:hover {
+      svg {
+        path {
+          fill: #1564bf;
+        }
+      }
+    }
+  }
+  .ninja-img {
+    height: 110px;
+    width: 110px;
+    margin-top: 23px;
+  }
+  h1 {
+    margin-top: 26px;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  p {
+    color: $clr5;
+    font-weight: 400;
+    font-family: HurmeGeometricSans3;
+  }
+  .line-btns {
+    gap: 30px;
+    .line-btn {
+      width: 200px;
+      height: 120px;
+      color: $clr3;
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 36px;
+      font-family: HurmeGeometricSans3 bold;
+
+      &:hover {
+        color: $clr4;
+        border: 1px solid $clr4;
+        border-radius: 8px;
+      }
+    }
+  }
+  .next-btn {
+    margin-top: 55px;
+    background-color: $clr3;
+    color: $clr2;
+    height: 40px;
+    width: 140px;
+    gap: 7.5px;
+    font-weight: 700px;
+    border-radius: 4px;
+    font-family: HurmeGeometricSans3 bold;
+
+    &:hover {
+      background-color: #bc284b;
+    }
+  }
+}

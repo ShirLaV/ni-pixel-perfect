@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { useState } from 'react';
+import { Modal } from './cmps/Modal';
+import { Screen } from './cmps/Screen';
 
 function App() {
+
+  const [isModalOpen, setIsModalOpen] = useState(true)
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {isModalOpen &&
+        <>
+          <Screen />
+          <Modal onClose={toggleModal} />
+        </>
+      }
     </div>
   );
 }
